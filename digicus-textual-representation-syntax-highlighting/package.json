@@ -1,0 +1,40 @@
+{
+  "name": "digicus-textual-representation-syntax-highlighting",
+  "displayName": "Digicus Textual Representation Syntax Highlighting",
+  "description": "VSCode extension for highlighting .dtr files.",
+  "version": "0.0.2",
+  "publisher": "SpacedOutThoughtsDevelopmentFoundation",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spaced-out-thoughts-dev-foundation/dtr_syntax_vscode_extension"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "dtr",
+        "aliases": [
+          "Digicus Textual Representation",
+          "dtr"
+        ],
+        "extensions": [
+          ".dtr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dtr",
+        "scopeName": "source.dtr",
+        "path": "./syntaxes/dtr.tmLanguage.json"
+      }
+    ]
+  }
+}
